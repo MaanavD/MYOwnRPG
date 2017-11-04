@@ -1,4 +1,6 @@
 //this is middleware. It happens in between a request and its resolution. Stops you if required or you haven't met the terms
+const Joi = require('joi')
+
 module.exports = {
     register(req, res, next) {
         const schema = {

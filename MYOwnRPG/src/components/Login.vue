@@ -5,10 +5,10 @@
   <v-flex xs6 offset xs3>
     <div class="white elevation-2">
       <v-toolbar class="cyan" flat dense dark>
-        <v-toolbar-title>Register</v-toolbar-title>
+        <v-toolbar-title>Login</v-toolbar-title>
       </v-toolbar>
   <div>
-    <h1>Register</h1>
+    <h1>Login</h1>
 
     <input type="email" name="email" 
     placeholder="email" v-model="email"/>
@@ -18,8 +18,8 @@
     allowing me to read from and write to them-->
     <br>
     <div class="error" v-html="error"/>
-    <button @click="register">
-      Register</Button>
+    <button @click="login">
+      Login</Button>
   </div>
     </div>
   </v-flex>
@@ -31,7 +31,7 @@
 // data in vue component
 import AuthenticationService from "@/services/AuthenticationService";
 export default {
-  name: "Register",
+  name: "Login",
   data() {
     return {
       email: "",
@@ -40,7 +40,7 @@ export default {
     };
   },
   methods: {
-    async register() {
+    async login() {
       try {
         const response = await AuthenticationService.register({
           email: this.email,
