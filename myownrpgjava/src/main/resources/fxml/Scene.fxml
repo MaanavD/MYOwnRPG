@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="306.0" prefWidth="445.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="com.mycompany.myownrpg.FXMLController">
+    <children>
+        <Button fx:id="button" layoutX="95.0" layoutY="166.0" onAction="#handleFileRequest" prefHeight="41.0" prefWidth="256.0" text="Select A Configuration File" />
+        <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+      <Label layoutX="108.0" layoutY="59.0" prefHeight="78.0" prefWidth="231.0" text="MYOwnRPG" textFill="#510101">
+         <font>
+            <Font name="Fox &amp; Cat" size="41.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>

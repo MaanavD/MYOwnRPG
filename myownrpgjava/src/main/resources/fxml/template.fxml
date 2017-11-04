@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="489.0" prefWidth="707.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.myownrpg.TemplateController">
+    <stylesheets>
+        <URL value="@/styles/template.css" />
+    </stylesheets>
+   <children>
+      <ImageView fitHeight="73.0" fitWidth="76.0" layoutX="224.0" layoutY="368.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="73.0" fitWidth="76.0" layoutX="72.0" layoutY="368.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="73.0" fitWidth="76.0" layoutX="404.0" layoutY="368.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="73.0" fitWidth="76.0" layoutX="515.0" layoutY="368.0" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</AnchorPane>
