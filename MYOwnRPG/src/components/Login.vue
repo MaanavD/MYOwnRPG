@@ -2,18 +2,28 @@
 <template> 
 <!-- first part of every vue component -->
 <v-layout column>
-  <v-flex xs6 offset xs3>
+  <v-flex lg9>
     <div class="white elevation-2">
       <v-toolbar class="cyan" flat dense dark>
         <v-toolbar-title>Login</v-toolbar-title>
       </v-toolbar>
   <div>
     <h1>Login</h1>
-
-    <input type="email" name="email" 
+<v-text-field
+      label="E-Mail"
+      v-model="email"
+      required
+    ></v-text-field>
+    <v-text-field
+      type="password"
+      label="Password"
+      v-model="password"
+      required
+    ></v-text-field>
+    <!-- <input type="email" name="email" 
     placeholder="email" v-model="email"/>
     <input type="password" name="password"
-     placeholder="password" v-model="password"/>
+     placeholder="password" v-model="password"/> -->
     <!-- V-model is a 2 way binding, 
     allowing me to read from and write to them-->
     <br>

@@ -1,10 +1,12 @@
 <template>
-<v-parallax class="fixheight" src="http://gameranx.com/wp-content/uploads/2016/05/Indivisible-4K-Wallpaper-2.jpg">
+<v-parallax class="fixheight" src="https://archive-media-1.nyafuu.org/wg/image/1386/86/1386865278889.jpg">
     <v-layout column align-center justify-center>
-      <h1 class="white--text">Vuetify.js</h1>
-      <h4 class="white--text">Build your application today!</h4>
+      <h1 class="amber--text">MYOwnRPG</h1>
+      <h4 class="amber--text">Our RPG. Your way.</h4>
+      <p class="amber--text">*With Optional MYO Armband integration</p>
     </v-layout>
-  </v-parallax>
+
+</v-parallax>
 </template>
 
 <script>
@@ -20,8 +22,16 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-.fixheight{
-  padding-top: 0;
+.amber{
+  color: #FFE082; /*Amber Lighten 3*/
+}
+.indigo{
+  color: #283593;
+}
+.fixheight:img{
+  zoom: 1.0;
+  filter: grayscale(75%);
+
 }
 h1, h2 {
   font-weight: normal;

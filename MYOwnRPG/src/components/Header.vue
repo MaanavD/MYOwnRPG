@@ -13,6 +13,9 @@
       <v-btn  class="home" v-if="!$store.state.isUserLoggedIn" flat dark @click="navigateTo({name: 'Register'})">
          Sign Up &nbsp;<v-icon>fa fa-sign-in</v-icon>
       </v-btn>
+      <v-btn  class="home" v-if="$store.state.isUserLoggedIn" flat dark @click="navigateTo({name: 'gamechoose'})">
+         Set up the Game! &nbsp;<v-icon>fa fa-play</v-icon>
+      </v-btn>
       <v-btn  class="home" v-if="$store.state.isUserLoggedIn" flat dark @click="navigateTo({name: 'root'})">
          Sign Out &nbsp;<v-icon>fa fa-sign-out</v-icon>
       </v-btn>
