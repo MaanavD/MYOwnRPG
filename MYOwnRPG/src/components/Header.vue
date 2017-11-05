@@ -1,21 +1,20 @@
-
-<template> 
-  <v-toolbar fixed class="cyan">
+<template>
+  <v-toolbar fixed class="indigo darken-3">
     <v-toolbar-title class="mr-4">
       <span class="home" flat dark @click="navigateTo({name: 'root'})">
-      MYOwnRPG
+        MYOwnRPG
       </span>
     </v-toolbar-title>
-    <!-- <v-toolbar-items>
-      <v-btn flat dark>Browse</v-btn>
-    </v-toolbar-items> -->
     <v-spacer></v-spacer>
     <v-toolbar-items>
-      <v-btn flat dark @click="navigateTo({name: 'Login'})">
-         Login
+      <v-btn class="home" v-if="!$store.state.isUserLoggedIn" flat dark @click="navigateTo({name: 'Login'})">
+         Login &nbsp; <v-icon>fa fa-lock</v-icon>
       </v-btn>
-      <v-btn flat dark @click="navigateTo({name: 'Register'})">
-         Sign Up
+      <v-btn  class="home" v-if="!$store.state.isUserLoggedIn" flat dark @click="navigateTo({name: 'Register'})">
+         Sign Up &nbsp;<v-icon>fa fa-sign-in</v-icon>
+      </v-btn>
+      <v-btn  class="home" v-if="$store.state.isUserLoggedIn" flat dark @click="navigateTo({name: 'root'})">
+         Sign Out &nbsp;<v-icon>fa fa-sign-out</v-icon>
       </v-btn>
     </v-toolbar-items>
   </v-toolbar>
@@ -33,10 +32,20 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+
 .home{
+  color: #FFF;
   cursor:pointer;
 }
 .home:hover{
-  color: #FFF;
+  color: #FFE082; /*Amber Lighten 3*/
+}
+.indigo{
+  color: #283593;
 }
 </style>
+<style>
+
+</style>
+
+
